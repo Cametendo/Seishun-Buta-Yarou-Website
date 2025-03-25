@@ -10,7 +10,12 @@
     font-weight: bold;
 }
 
-.textbox-italic-bold-white {
+.textbox-italic {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.textbox-italic-bold-footer {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bold;
@@ -126,5 +131,19 @@ body {
 
 section.special-links a {
     color: inherit;
+}
 
+.Bilder-Hauptcharaktere {
+    width: 700px;
+    height: 394px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+#Cover_Season_One {
+    width: 730px;
+    height: 394px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border: 2px, solid gray;
 }
