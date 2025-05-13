@@ -47,14 +47,16 @@ body {
     text-decoration: none;
     display: block;
     text-align: center;
+    flex: 1 1 auto; /* Flexibilität hinzugefügt */
 }
 
 .navbar a:hover {
-    background-color: #575757;
+    background-color: #c9c9c9;
 }
 
 .dropdown {
     position: relative;
+    flex: 1 1 auto; /* Flexibilität hinzugefügt */
 }
 
 .dropdown-content {
@@ -63,6 +65,12 @@ body {
     background-color: white;
     min-width: 150px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999; /* Sicherstellen, dass das Pop-Up oben liegt */
+    top: 100%; /* Dropdown direkt unter dem Menü */
+    left: 50%; /* Horizontal mittig */
+    transform: translateX(-50%); /* Um genau die Mitte auszurichten */
+    padding: 10px 0;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -125,10 +133,15 @@ section.special-links a {
     border-radius: 15px;
 }
 
+/* Anpassungen für mobile Geräte */
 @media screen and (max-width: 600px) {
     .navbar a {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Jede Navbar-Verlinkung nimmt 100% der Breite ein */
         text-align: center;
+    }
+
+    .navbar {
+        justify-content: flex-start; /* Verhindert, dass die Navbar in der Mitte bleibt */
     }
 }
 
